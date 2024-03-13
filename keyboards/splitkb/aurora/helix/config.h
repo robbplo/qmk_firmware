@@ -16,6 +16,3 @@
 
 #pragma once
 
-#ifdef OLED_ENABLE
-#   define OLED_FONT_H "keyboards/splitkb/aurora/helix/glcdfont.c"
-#endif

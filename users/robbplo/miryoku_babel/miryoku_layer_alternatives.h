@@ -33,20 +33,12 @@ KC_SCLN,           KC_4,              KC_5,              KC_6,              KC_E
 KC_GRV,            KC_1,              KC_2,              KC_3,              KC_BSLS,           U_NA,              U_NA,              U_NA,              KC_ALGR,           U_NA,              \
 U_NP,              U_NP,              KC_DOT,            KC_0,              KC_MINS,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
-
-
-#define MIRYOKU_ALTERNATIVES_SYM_OLD \
-KC_LCBR,           KC_AMPR,           KC_ASTR,           KC_LPRN,           KC_RCBR,           U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-KC_COLN,           KC_DLR,            KC_PERC,           KC_CIRC,           KC_PLUS,           U_NA,              KC_LSFT,           KC_LCTL,           KC_LALT,           KC_LGUI,           \
-KC_TILD,           KC_EXLM,           KC_AT,             KC_HASH,           KC_PIPE,           U_NA,              U_NA,              U_NA,              KC_ALGR,           U_NA,              \
-U_NP,              U_NP,              KC_LPRN,           KC_RPRN,           KC_UNDS,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
-
 // brackets and parens on home row, opening and closing on left and right respectively
 // all symbols must be accessible from the symbol layer
 #define MIRYOKU_ALTERNATIVES_SYM \
 KC_EXLM,           KC_AT,             KC_HASH,           KC_DLR,            KC_PERC,           KC_CIRC,           KC_AMPR,           KC_ASTR,           KC_DQUO,           KC_QUOT,           \
 KC_LABK,           KC_LBRC,           KC_LCBR,           KC_LPRN,           KC_UNDS,           KC_MINS,           KC_RPRN,           KC_RCBR,           KC_RBRC,           KC_RABK,           \
-KC_TILD,           KC_GRV,            KC_EQL,            KC_COLN,           KC_PIPE,           KC_BSLS,           KC_SCLN,           KC_PLUS,           U_NA,              KC_QUES,           \
+KC_TILD,           KC_GRV,            KC_EQL,            KC_COLN,           KC_BSLS,           KC_PIPE,           KC_SCLN,           KC_PLUS,           U_NA,              KC_QUES,           \
 U_NP,              U_NP,              U_NA,              KC_SPC,            U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_FUN \

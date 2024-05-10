@@ -64,11 +64,11 @@ void render_sine(bool invert) {
 bool oled_task_kb(void) {
     if (is_keyboard_master()) {
         render_sine(false);
+        oled_scroll_left();
     } else {
         render_sine(true);
+        oled_scroll_right();
     }
-
-    oled_scroll_left();
 
     return false;
 }

@@ -11,8 +11,17 @@
 #define SPLIT_TRANSPORT_MIRROR // Fix for split keyboards
 
 #undef TAPPING_TERM
-#define TAPPING_TERM 170
+#define TAPPING_TERM 200
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
+// Bilateral combinations patch, courtesy of sunaku
+// https://sunaku.github.io/home-row-mods.html
+#define BILATERAL_COMBINATIONS
+#define BILATERAL_COMBINATIONS_LIMIT_CHORD_TO_N_KEYS 4 /* GUI, Alt, Ctrl, Shift */
+#define BILATERAL_COMBINATIONS_ALLOW_CROSSOVER_AFTER 60 /* ms */
+#define BILATERAL_COMBINATIONS_ALLOW_SAMESIDED_AFTER 500 /* ms */
+#define BILATERAL_COMBINATIONS_TYPING_STREAK_TIMEOUT 100  /* ms */
+#define BILATERAL_COMBINATIONS_TYPING_STREAK_MODMASK (~MOD_MASK_SHIFT)
 
 #define MIRYOKU_CLIPBOARD_WIN // Control based clipboard shortcuts
 

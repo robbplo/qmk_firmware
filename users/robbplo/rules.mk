@@ -8,6 +8,10 @@ TAP_DANCE_ENABLE = no
 CAPS_WORD_ENABLE = yes
 KEY_OVERRIDE_ENABLE = yes
 
+# per-key eager debouncing
+# works better with tactile switches
+DEBOUNCE_TYPE = asym_eager_defer_pk
+
 INTROSPECTION_KEYMAP_C = robbplo.c # keymaps
 
 include users/robbplo/custom_rules.mk

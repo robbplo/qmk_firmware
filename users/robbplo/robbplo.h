@@ -14,6 +14,10 @@ MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
 };
 
+enum custom_keycodes {
+    U_COLN = SAFE_RANGE,
+};
+
 #define U_MACRO_VA_ARGS(macro, ...) macro(__VA_ARGS__)
 
 #if !defined (MIRYOKU_MAPPING)

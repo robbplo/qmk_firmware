@@ -16,6 +16,7 @@ MIRYOKU_LAYER_LIST
 
 enum custom_keycodes {
     U_COLN = SAFE_RANGE,
+    U_MINS,
 };
 
 #define U_MACRO_VA_ARGS(macro, ...) macro(__VA_ARGS__)

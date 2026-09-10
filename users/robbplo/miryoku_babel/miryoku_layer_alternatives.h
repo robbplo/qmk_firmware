@@ -37,7 +37,7 @@ U_NP,              U_NP,              U_NA,              KC_DOT,            KC_0
 // all symbols must be accessible from the symbol layer
 #define MIRYOKU_ALTERNATIVES_SYM \
 KC_EXLM,           KC_AT,             KC_HASH,           KC_DLR,            KC_PERC,           KC_CIRC,           KC_AMPR,           KC_ASTR,           KC_DQUO,           KC_QUOT,           \
-KC_LABK,           KC_LBRC,           KC_LCBR,           KC_LPRN,           KC_UNDS,           KC_MINS,           KC_RPRN,           KC_RCBR,           KC_RBRC,           KC_RABK,           \
+KC_LABK,           KC_LBRC,           KC_LCBR,           KC_LPRN,           KC_UNDS,           U_MINS,            KC_RPRN,           KC_RCBR,           KC_RBRC,           KC_RABK,           \
 KC_TILD,           KC_GRV,            KC_EQL,            U_COLN,            KC_BSLS,           KC_PIPE,           KC_SCLN,           KC_PLUS,           U_NA,              KC_QUES,           \
 U_NP,              U_NP,              U_NA,              KC_SPC,            U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 

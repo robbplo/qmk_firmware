@@ -16,16 +16,31 @@ MIRYOKU_LAYER_LIST
 
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    if (keycode == U_COLN) {
-        // Send the shifted key as an atomic tap so Shift cannot leak into the
-        // next key when the physical keys overlap during a fast roll.
-        if (record->event.pressed) {
-            tap_code16(KC_COLN);
-        }
-        return false;
-    }
+    switch (keycode) {
+        case U_COLN:
+            // Send the shifted key as an atomic tap so Shift cannot leak into
+            // the next key when the physical keys overlap during a fast roll.
+            if (record->event.pressed) {
+                tap_code16(KC_COLN);
+            }
+            return false;
 
-    return true;
+        case U_MINS:
+            if (record->event.pressed) {
+                // A preceding shifted symbol may still be physically held.
+                // Hide its weak Shift while sending an unshifted minus.
+                const uint8_t weak_mods = get_weak_mods();
+                del_weak_mods(MOD_MASK_SHIFT);
+                send_keyboard_report();
+                tap_code(KC_MINS);
+                set_weak_mods(weak_mods);
+                send_keyboard_report();
+            }
+            return false;
+
+        default:
+            return true;
+    }
 }
 
 // shift functions
